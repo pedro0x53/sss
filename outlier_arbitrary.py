@@ -4,7 +4,7 @@ import math
 from gensim.models import KeyedVectors
 import numpy as np
 
-embeddings_path = '/Users/pedrosousa/lab/py/embeddings/w2v/w2v.vectors.kv'
+embeddings_path = './w2v/w2v.vectors.kv'
 model = KeyedVectors.load(embeddings_path, mmap='r')
 
 input_text = "Pensar nos testes antes de desenvolver uma nova funcionalidade nos da a oportunidade de pensar verdadeiramente em como cada função do nosso programa irá se comportar, nos dando uma visão clara sobre cada detalhe de nossa classe. Deste modo, nos temos um feedback imediato sobre um comportamento inesperado, minimizando a inserção de bugs, e aumentando a legibilidade e manutenibilidade do nosso sistema.".lower()

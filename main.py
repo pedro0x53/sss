@@ -6,7 +6,7 @@ from gensim.models import KeyedVectors
 verbose = False
 
 nlp = spacy.load("pt_core_news_sm")
-kv = KeyedVectors.load("/Users/pedrosousa/lab/py/embeddings/w2v/w2v.vectors.kv", mmap="r")
+kv = KeyedVectors.load("./w2v/w2v.vectors.kv", mmap="r")
 conjugator = mlconjug3.Conjugator(language="pt")
 
 positive_set = ["precisar", "explicar", "conseguir"]
